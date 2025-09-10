@@ -1,0 +1,91 @@
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Collapse */
+.collapse {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.collapse:not(.show) {
+    display: block;
+}
+
+.collapseHeader {
+  background-color: #d00000;
+  color: white;
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.collapseContent {
+  padding: 1rem;
+  background: #fafafa;
+}
+
+/* Cards */
+.card {
+  background-color: #f8f3f3;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1rem;
+}
+
+.cardHeader {
+  background-color: #d00000;
+  height: 20px;
+  border-radius: 4px 4px 0 0;
+}
+
+.cardBody {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.info p {
+  margin: 4px 0;
+  color: #a50000;
+}
+
+.info strong {
+  color: #d00000;
+}
+
+.status {
+  text-align: right;
+  color: #d00000;
+  font-weight: bold;
+}
+
+.btnContainer {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.detalhesBtn {
+  background-color: #d00000;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.detalhesBtn:hover {
+  background-color: #a50000;
+}

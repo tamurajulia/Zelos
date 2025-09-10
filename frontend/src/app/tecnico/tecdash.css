@@ -1,0 +1,95 @@
+.my-radius {
+    border-radius: 18px !important;
+    border: 3px solid #d9d9d9;
+}
+
+.card-body {
+    background-color: #f5f0ef !important;
+    padding: 2rem 1.5rem;
+    border-radius: 18px;
+}
+
+.card-body .row.align-items-center {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.card-body h1 {
+    font-size: 4.5rem; /* Aumenta o número */
+    font-weight: bold;
+    color: #225299;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.card-body p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-body h4 {
+    font-weight: bold;
+    color: #225299;
+    margin-top: 0.25rem; /* Espaçamento entre p e h4 */
+}
+
+/* Outras classes que você já usava */
+.card-metric {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.card-title-metric {
+    background-color: #0047AB;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.card-title-metric p {
+    color: white !important;
+}
+
+.text-custom-link {
+    font-weight: bold;
+    color: #0047AB !important;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.logo {
+    width: 6rem;
+    margin-left: 2rem;
+}
+
+.nome-usuario {
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.sidebar-fundo {
+    background-color: #f5f0ef;
+    width: 15rem;
+}
+
+.navbar-horizontal {
+    background-color: #f5f0ef;
+}
+.btn-personalizado {
+    background-color: #225299;
+    color: white;
+}
+  
+.btn-personalizado:hover {
+    background-color: #1a417f;
+    color: white;
+}

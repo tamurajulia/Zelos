@@ -1,0 +1,55 @@
+.item {
+    background: #f6f0ef;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(24,59,88,0.06);
+  }
+  
+  /* botão da pergunta */
+  .question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: #143e63;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-align: left;
+    gap: 0.75rem;
+  }
+  
+  .qText {
+    flex: 1;
+    text-align: left;
+  }
+  
+  /* ícone de seta */
+  .icon {
+    font-size: 0.9rem;
+    opacity: 0.95;
+  }
+  
+  /* área da resposta */
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 300ms ease, padding 200ms ease;
+    padding: 0 1rem;
+    background: #fff8f6;
+  }
+  
+  .answer.open {
+    padding: 1rem;
+    max-height: 400px;
+  }
+  
+  .answer p {
+    margin: 0;
+    color: #274f66;
+    line-height: 1.45;
+    font-size: 0.95rem;
+  }
+  

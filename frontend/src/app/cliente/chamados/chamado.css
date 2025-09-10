@@ -1,0 +1,167 @@
+.card {
+  border-radius: 12px;
+  border: 1px solid #d9d9d9 !important;
+  background-color: #f5f0ef;
+  padding: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+.h6{
+  background-color: #8b0000;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #8b0000;
+}
+
+/* Inputs e textarea */
+.form-control {
+  border: 2px solid #8b0000;
+  border-radius: 8px;
+  background-color: #f5f0ef; 
+  box-shadow: none !important;
+}
+
+.form-control:focus {
+  border-color: #8b0000;
+  background-color: #f5f0ef; 
+  box-shadow: 0 0 0 2px rgba(43, 97, 209, 0.2);
+}
+
+/* Radio buttons */
+.form-check-input {
+  border: 2px solid #8b0000;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #2b61d1;
+  border-color: #8b0000;
+}
+
+.form-check-label {
+  margin-left: 4px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+.form-check-input[type="radio"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #8b0000;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  margin-right: 6px;
+}
+
+.form-check-input[type="radio"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(139, 0, 0, 0.3);
+}
+
+
+
+.form-check-input[type="radio"]:checked {
+  background-color: #8b0000;
+  border-color: #8b0000;
+}
+
+
+.form-check-input[type="radio"]:checked::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.select-custom {
+  border: 2px solid #8b0000;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.select-custom .seta {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+}
+
+.opcoes {
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #8b0000;
+  background: white;
+  border-radius: 5px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.opcoes li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.opcoes li:hover {
+  background: #8b0000;
+  color: white;
+}
+
+
+/* Textarea */
+textarea.form-control {
+  resize: none;
+  min-height: 100px;
+  background-color: #f5f0ef;
+}
+
+/* Upload box */
+.upload-box {
+  border: 2px solid #8b0000;
+  border-radius: 8px;
+  background-color: #ffc9c9;
+  padding: 20px;
+  text-align: center;
+  color: #8b0000;
+  font-weight: bold;
+}
+
+.border{
+  border: 2px solid #8b0000 !important;
+  border-radius: 8px;
+ 
+}
+
+/* Botão */
+.btn-primary {
+  background-color: #cc0000;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.4rem;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #8b0000;
+}

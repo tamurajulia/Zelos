@@ -1,0 +1,124 @@
+{
+  "banner": {
+    "image": "/BannerPc/suporte.png",
+    "celular": "/BannerMobile/suporte.png",
+    "alt": "Banner Suporte"
+  },
+  "contacts": [
+    {
+      "icon": "fas fa-phone",
+      "title": "Telefone",
+      "text": "(11) 4227-7450"
+    },
+    {
+      "icon": "fas fa-map-marker-alt",
+      "title": "Localização",
+      "text": "R. Santo André, 680 - Boa Vista, São Caetano do Sul - SP, 09572-000"
+    },
+    {
+      "icon": "fas fa-envelope",
+      "title": "E-mail",
+      "text": "Senai@outlook.com"
+    }
+  ],
+  "form": {
+    "image": "/fundoLogin.png",
+    "alt": "Atendimento",
+    "title": "Dúvida ou feedback?",
+    "icon": "fas fa-phone",
+    "fields": [
+      { "label": "Nome completo", "type": "text" },
+      { "label": "Código da turma", "type": "text" },
+      { "label": "Mensagem", "type": "textarea" }
+    ],
+    "buttonText": "Entrar"
+  },
+  "quickLinks": {
+    "background": "/bannerPc/suporte2.png",
+    "links": [
+      {
+        "icon": "fas fa-comments",
+        "title": "suporte",
+        "description": "Fale com o nosso suporte",
+        "buttonText": "clica aqui",
+        "href": "#"
+      },
+      {
+        "icon": "fas fa-bullhorn",
+        "title": "chamado",
+        "description": "Faça o seu chamado aqui",
+        "buttonText": "clica aqui",
+        "href": "#"
+      },
+      {
+        "icon": "fas fa-user",
+        "title": "status",
+        "description": "Veja o status do seu chamado aqui",
+        "buttonText": "clica aqui",
+        "href": "#"
+      }
+    ]
+  },
+  "faq": [
+    {
+      "id": "abrir-chamado",
+      "column": "left",
+      "question": "Como posso abrir um chamado?",
+      "answer": "Acesse o sistema, clique em \"Abrir Chamado\" e preencha o formulário com as informações solicitadas, incluindo o número de patrimônio do item."
+    },
+    {
+      "id": "numero-patrimonio",
+      "column": "left",
+      "question": "Onde encontro o número de patrimônio do equipamento?",
+      "answer": "O número de patrimônio geralmente está em uma etiqueta no próprio equipamento ou na nota fiscal. Se não localizar, verifique com o responsável do setor."
+    },
+    {
+      "id": "abrir-sem-patrimonio",
+      "column": "left",
+      "question": "Posso abrir um chamado sem informar o número de patrimônio?",
+      "answer": "Sim, mas isso pode atrasar o atendimento. Informe o máximo de detalhes possível (local, modelo, número de série)."
+    },
+    {
+      "id": "acompanhar-chamado",
+      "column": "left",
+      "question": "Como acompanho o andamento do meu chamado?",
+      "answer": "No sistema, acesse 'Meus Chamados' e visualize o histórico e status de cada solicitação."
+    },
+    {
+      "id": "tipos-problemas",
+      "column": "left",
+      "question": "Que tipos de problemas posso relatar?",
+      "answer": "Relate problemas de hardware, software, rede, solicitação de manutenção e dúvidas operacionais relacionadas ao equipamento."
+    },
+    {
+      "id": "tempo-atendimento",
+      "column": "right",
+      "question": "Quanto tempo leva para o chamado ser atendido?",
+      "answer": "O tempo de resposta pode variar conforme a prioridade. Chamados críticos são atendidos com mais urgência."
+    },
+    {
+      "id": "quem-pode-abrir",
+      "column": "right",
+      "question": "Quem pode abrir chamados no sistema?",
+      "answer": "Qualquer usuário cadastrado no sistema com permissão de abertura de chamados. Contate o administrador caso não tenha acesso."
+    },
+    {
+      "id": "atualizar-chamado",
+      "column": "right",
+      "question": "Posso atualizar informações de um chamado já aberto?",
+      "answer": "Sim — abra o chamado e adicione comentários ou anexos no histórico."
+    },
+    {
+      "id": "cancelar-chamado",
+      "column": "right",
+      "question": "Posso cancelar um chamado depois de aberto?",
+      "answer": "Sim. Abra o chamado e escolha a opção 'Cancelar' ou solicite ao atendente que encerre o chamado."
+    },
+    {
+      "id": "problema-persistir",
+      "column": "right",
+      "question": "O que fazer se o problema persistir após o atendimento?",
+      "answer": "Reabra o chamado informando que o problema persistiu, anexando evidências (fotos, prints, logs) para agilizar a nova análise."
+    }
+  ]
+}

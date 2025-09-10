@@ -1,0 +1,63 @@
+/* Fundo geral */
+body {
+  background-color: #f5f0ef;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.not-found-content {
+  height: 100dvh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container centralizado */
+.notfound-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Título */
+.notfound-container h3 {
+  color: #cc0000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Imagem */
+.notfound-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* Botão */
+.notfound-button button {
+  background-color: #cc0000;
+  color: #f5f0ef;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.notfound-button button:hover {
+  background-color: #a30000;
+}
+
+.notfound-image {
+  max-width: 700px;
+  /* aumentei o limite */
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}

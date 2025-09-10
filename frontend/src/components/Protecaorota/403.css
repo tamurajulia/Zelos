@@ -1,0 +1,37 @@
+.corpo403 {
+    background-color: #f5f0ef;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.corpo403 .container {
+    width: 70%;
+} 
+
+.notfound-p {
+    color: #e30613;
+    font-weight: bold;
+}
+
+.notfound-button {
+    background-color: #e30613;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}

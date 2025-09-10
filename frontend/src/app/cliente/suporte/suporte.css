@@ -1,0 +1,152 @@
+/* Ajusta a altura para todos ficarem iguais */
+.card-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    transition: transform 0.2s ease;
+  }
+  
+  .card-contato:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Ícones maiores e cor personalizada */
+  .contato-icon {
+    font-size: 3rem;
+    color: #cc0000; /* vermelho personalizado */
+  }
+  
+  /* Títulos e textos em azul */
+  .contato-titulo,
+  .contato-texto {
+    color: #225299; /* azul personalizado */
+  }
+  
+  /* Garantir responsividade e alinhamento */
+  @media (max-width: 768px) {
+    .card-contato {
+      min-height: auto;
+      padding: 2rem 1rem;
+    }
+  }
+  /* Título maior e vermelho */
+  .form-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #cc0000;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-titulo i {
+    font-size: 2.2rem;
+    color: #cc0000;
+  }
+  
+  /* Labels em azul */
+  .form-label-custom {
+    font-weight: 600;
+    color: #225299;
+    margin-bottom: 0.3rem;
+  }
+  
+  /* Inputs com borda azul */
+  .form-input {
+    border: 2px solid #225299;
+    border-radius: 6px;
+    font-size: 1rem;
+    padding: 0.6rem;
+  }
+  
+  .form-input:focus {
+    border-color: #225299;
+    box-shadow: 0 0 5px rgba(34, 82, 153, 0.4);
+  }
+  
+  /* Botão maior e vermelho */
+  .btn-enviar {
+    background-color: #cc0000;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-weight: bold;
+    border: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-enviar:hover {
+    background-color: #a30000;
+    color: #fff;
+  }
+  
+  /* Imagem arredondada para se assemelhar à da captura */
+  .img-form {
+    object-fit: cover;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .form-titulo {
+      font-size: 1.6rem;
+    }
+  
+    .form-titulo i {
+      font-size: 1.8rem;
+    }
+  }
+  .quick-links-card {
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    padding: 40px 20px;
+   
+    min-height: 350px; /* Aumente o valor para mais espaço */
+  }
+  
+  .quick-links-card h2 {
+    font-size: 2rem;
+    color: #fff;
+  }
+  
+  .link-item {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    color: #000;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .link-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .link-item .icon {
+    font-size: 2.5rem;
+    color: #225299;
+    margin-bottom: 10px;
+  }
+  
+  .link-item h6 {
+    font-size: 1.1rem;
+    color: #225299;
+  }
+  
+  .link-item p {
+    font-size: 0.95rem;
+    color: #444;
+  }
+  
+  .link-item .btn {
+    background-color: #225299;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .link-item .btn:hover {
+    background-color: #1a3d73;
+  }
+  

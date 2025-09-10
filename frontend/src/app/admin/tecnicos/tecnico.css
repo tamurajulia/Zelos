@@ -1,0 +1,175 @@
+.tecnicos-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* sempre 1 card por linha */
+    gap: 20px;
+  }
+  
+.h3{
+  color: #225299;
+}
+
+  .tecnico-card {
+    background-color: #f7f2f2;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 24px 28px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  
+    width: 100%; /* ocupa toda a largura */
+  }
+  
+  .tecnico-card .linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  
+  .tecnico-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .tecnico-card .label {
+    font-weight: bold;
+    color: #225299;
+  }
+  
+/* caixa do modal */
+.modal-content {
+  background: #fff;
+  border: 3px solid #225299;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 850px;
+  width: 95%;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.select-custom {
+  border: 2px solid #225299;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.select-custom .seta {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+  color: #225299;
+}
+
+.opcoes {
+  position: absolute;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid #225299;
+  background: white;
+  border-radius: 5px;
+  overflow-y: auto;
+  z-index: 10;
+  margin-top: 5px;
+  max-height: 200px;
+}
+
+.opcoes li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.opcoes li:hover {
+  background: #225299;
+  color: white;
+}
+
+/* título do modal */
+.modal-content h3 {
+  color: #225299;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* tabela */
+.modal-content table {
+  border: 1px solid #225299;
+}
+
+.modal-content thead {
+  background-color: #225299;
+  color: white;
+}
+
+.modal-content tbody tr:hover {
+  background-color: rgba(34, 82, 153, 0.1);
+}
+
+/* botão selecionar */
+.btn-outline-primary {
+  color: #225299;
+  border-color: #225299;
+  font-weight: bold;
+}
+.btn-outline-primary:hover {
+  background-color: #225299;
+  color: #fff;
+}
+
+/* botão confirmar */
+.btn-primary {
+  background-color: #225299;
+  border-color: #225299;
+}
+.btn-primary:hover {
+  background-color: #193c73;
+  border-color: #193c73;
+}
+
+/* botão cancelar */
+.btn-secondary {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+.btn-secondary:hover {
+  background-color: #a30000;
+  border-color: #a30000;
+}
+/* título do modal */
+.modal-content h3 {
+  color: #225299 !important;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* cabeçalho da tabela */
+.modal-content thead {
+  background-color: #102863 !important;
+  color: #fff !important;
+}
+
+.modal-content th {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* botão Confirmar (azul) */
+.btn-primary {
+  background-color: #225299 !important;
+  border-color: #225299 !important;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out; /* transição suave */
+}
+
+.btn-primary:hover {
+  background-color: #193c73 !important;
+  border-color: #193c73 !important;
+}
+
+  

@@ -1,0 +1,102 @@
+.navbar-custom {
+  background-color: #f5f0ef;
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  margin: 1rem auto;
+  max-width: 1200px;
+}
+ 
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+ 
+/* Container logo + botão mobile */
+.logo-mobile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+.logo-img {
+  height: 80px;
+  width: auto;
+}
+ 
+/* Links desktop */
+nav.menu-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+ 
+nav.menu-nav a {
+  text-decoration: none;
+  color: #cc0000;
+}
+ 
+nav.menu-nav a:hover {
+  opacity: 0.7;
+}
+ 
+/* Ícones */
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ 
+.icons i {
+  font-size: 24px;
+  color: #cc0000;
+  cursor: pointer;
+}
+ 
+/* Botão hambúrguer */
+button.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #cc0000;
+  cursor: pointer;
+}
+ 
+/* Menu mobile */
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+ 
+.menu-mobile a {
+  text-decoration: none;
+  color: #cc0000;
+}
+ 
+/* Responsividade */
+@media (max-width: 768px) {
+  nav.menu-nav {
+    display: none; /* Esconde menu desktop */
+  }
+ 
+  .logo-links {
+    display: none; /* Esconde container antigo */
+  }
+ 
+  .logo-mobile {
+    display: flex; /* Mostra logo + hambúrguer */
+  }
+}
+ 
+@media (min-width: 769px) {
+  button.menu-toggle {
+    display: none; /* Esconde hambúrguer no desktop */
+  }
+}

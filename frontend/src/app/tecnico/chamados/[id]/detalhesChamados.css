@@ -1,0 +1,183 @@
+.containerCustom {
+  background-color: #f7f3f2;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+.cardHeader {
+  background-color: #225299;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tituloChamado h2 {
+  color: #225299;
+  margin: 0;
+}
+.sectionTitle {
+  color: #225299;
+ 
+  font-size: 30px;
+}
+.espacoEntreLinhas {
+  margin-bottom: 10px; 
+}
+.label {
+  font-weight: bold;
+}
+.btnAzul {
+  background-color: #225299; 
+  border: none;
+  color: white;
+  border-radius: 8px; 
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.btnAzul:hover {
+  background-color: #406bab; 
+}
+.btnExcluir {
+  background-color: #225299;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+}
+.btnExcluir:hover {
+  background-color: #406bab;
+}
+.linhaSeparadora {
+  border: 0;
+  height: 3px; 
+  background-color: #225299; 
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.customSelectWrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 320px; 
+}
+.customSelect {
+  width: 100%;
+  padding: 8px 38px 8px 12px;
+  font-size: 16px;
+  border: 2px solid #17427a;
+  border-radius: 8px;
+  appearance: none;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 20px 20px;
+  cursor: pointer;
+}
+.customSelect:focus {
+  outline: none;
+  border-color: #225299;
+  box-shadow: 0 0 5px #225299;
+}
+.customSelectWrapper::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: #1e3a8a;
+  transform: translateY(-50%) rotate(-45deg);
+  transform-origin: center;
+}
+.espacoEntreLinhas {
+  margin-bottom: 1.0rem !important;
+}
+.cardRelatorio {
+  background-color: #f7f3f2;
+  border: 2px solid #dcdcdc;
+  border-radius: 16px;
+  padding: 20px;
+}
+.btnAbrirRelatorio {
+  background-color: #225299;
+  color: white;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 12px;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnAbrirRelatorio i {
+  font-size: 22px;
+  margin-left: 10px;
+}
+.form-label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+.textareaEstilizado {
+  border: 2px solid #225299;
+  border-radius: 8px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+.labelNegrito {
+  font-weight: bold;
+}
+.uploadContainer {
+  border: 2px solid #225299;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+.uploadButton {
+  background-color: #225299;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+.uploadButton:hover {
+  background-color: #1b3f77;
+}
+.btnConcluir {
+  background-color: #225299;
+  color: white;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 12px;
+}
+.btnConcluir:hover {
+  background-color: #1b3f77;
+}
+
+.carousel-item.active {
+    text-align: center;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #225299;
+  font-size: 2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #225299;
+}

@@ -1,0 +1,101 @@
+
+.containerRelatorio {
+    max-width: 900px;
+    margin: 2rem auto;
+    background-color: #f8f4f3;
+    border-radius: 20px;
+    padding: 1.5rem 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background-color: #cc0000;
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-size: 1.1rem;
+    margin: -1.5rem -2rem 1.5rem -2rem;
+  }
+  
+  .content {
+    line-height: 1.8;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: #cc0000;
+  }
+
+  .relatorio-btn{
+    background-color: #cc0000;
+    color: white;
+    transition: all ease .3s;
+  }
+
+  .relatorio-btn:hover {
+    background-color: #cc0000;
+    color: white;
+    opacity: .9;
+  }
+  
+  .description {
+    margin-top: 1rem;
+  }
+
+  .modal-header .relatorio-btn-close {
+    padding: calc(var(--bs-modal-header-padding-y) * .5) calc(var(--bs-modal-header-padding-x) * .5);
+    margin-top: calc(-.5 * var(--bs-modal-header-padding-y));
+    margin-right: calc(-.5 * var(--bs-modal-header-padding-x));
+    margin-bottom: calc(-.5 * var(--bs-modal-header-padding-y));
+    margin-left: auto;
+    font-size: 1.3rem !important;
+    cursor: pointer;
+}
+
+  .relatorio-modal-header {
+    background-color: #cc0000;
+    color: white !important;
+  }
+
+  .relatorio-modal-body strong {
+    color: #cc0000;
+  }
+
+  .carousel-item.active {
+    text-align: center;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #cc0000;
+  font-size: 2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #cc0000;
+}
+
+.relatorio-btn-fechar {
+  background-color: #cc0000;
+  color: white;
+}
+
+  .relatorio-btn-fechar:hover {
+    background-color: #cc0000;
+    color: white;
+    opacity: .9;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 600px) {
+    .container {
+      padding: 1rem 1.2rem;
+    }
+  
+    .header {
+      font-size: 1rem;
+    }
+  }
+  
