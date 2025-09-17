@@ -106,11 +106,7 @@ function SidebarContent() {
                     <i className="bi bi-grid-1x2-fill me-2"></i> Dashboard
                 </a>
             </li>
-            <li className="nav-item mb-2">
-                <a href="/admin/historico" className="nav-link text-danger fw-bold d-flex align-items-center">
-                    <i className="bi bi-book-fill me-2"></i> Histórico
-                </a>
-            </li>
+           
             <li className="nav-item mb-2">
                 <a href="/admin/usuarios" className="nav-link text-danger fw-bold d-flex align-items-center">
                     <i className="bi bi-people-fill me-2"></i> Usuários
