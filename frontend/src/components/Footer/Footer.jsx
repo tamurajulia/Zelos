@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
         <footer className="footer">
-            <div className="container">
+            <div className="container-footer">
 
                 {/* Logo e Links */}
                 <div className="footer-content">
@@ -53,7 +53,7 @@ export default function Footer() {
 
                 {/* Texto centralizado */}
                 <div className="footer-copy">
-                    © 2025 CareerNest. Todos os direitos reservados
+                    © 2025 ZelosSenai. Todos os direitos reservados
                 </div>
             </div>
         </footer>

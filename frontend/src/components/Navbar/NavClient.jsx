@@ -1,22 +1,35 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react"; // Adicione useEffect
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import ProfileModal from "./ProfileModal";
 import "./navbar.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-
+ 
 export default function NavClient() {
   const [modalOpen, setModalOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
-
-
+ 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMenuOpen(false);
+      }
+    };
+ 
+    window.addEventListener("resize", handleResize);
+ 
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+ 
   const handleLogout = () => {
-    localStorage.clear();        
-    router.push("/");            
+    localStorage.clear();
+    router.push("/");
   };
-
+ 
   return (
     <>
       <header className="navbar-custom">
@@ -31,7 +44,7 @@ export default function NavClient() {
               <i className="bi bi-list"></i>
             </button>
           </div>
-
+ 
           {/* Links desktop */}
           <nav className="menu-nav">
             <Link href="/cliente">Home</Link>
@@ -39,7 +52,7 @@ export default function NavClient() {
             <Link href="/cliente/suporte">Suporte</Link>
             <Link href="/cliente/historico">Histórico</Link>
           </nav>
-
+ 
           {/* Ícones */}
           <div className="icons">
             <i
@@ -54,7 +67,7 @@ export default function NavClient() {
             ></i>
           </div>
         </div>
-
+ 
         {/* Menu mobile (abre quando clica) */}
         {menuOpen && (
           <nav className="menu-mobile">
@@ -65,7 +78,7 @@ export default function NavClient() {
           </nav>
         )}
       </header>
-
+ 
       {/* Modal */}
       <ProfileModal open={modalOpen} onClose={() => setModalOpen(false)} />
     </>

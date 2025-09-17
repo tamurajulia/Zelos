@@ -31,21 +31,21 @@
     color: #225299;
   }
   
-  .opcoes {
-    position: absolute;
-    width: 200px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    border: 2px solid #225299;
-    background: white;
-    border-radius: 5px;
-    overflow-y: auto;
-    z-index: 10;
-    margin-top: 5px;
-    max-height: 200px;
-  }
-  
+.opcoes {
+  position: relative;
+  background: transparent;
+  width: 200px; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 2px solid #225299;
+  border-radius: 5px;
+  overflow-y: auto;
+margin-top: 5px; 
+  max-height: 200px;
+    
+}
+
   .opcoes li {
     padding: 8px;
     cursor: pointer;

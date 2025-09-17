@@ -1,8 +1,15 @@
 .usuarios-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
-  gap: 20px; /* espaço entre os cards */
+  grid-template-columns: repeat(2, 1fr); /* padrão: 2 colunas */
+  gap: 20px;
   justify-content: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .usuarios-grid {
+    grid-template-columns: 1fr; /* 1 coluna em tablets/celulares */
+  }
 }
 
 .usuario-card {
@@ -13,8 +20,9 @@
   font-family: Arial, sans-serif;
   box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 
-  width: 100%; /* ocupa a coluna inteira */
+  width: 100%;
   max-width: 420px; /* mantém limite */
+  margin: 0 auto;   /* centraliza o card em telas pequenas */
 }
 
 .usuario-card p {

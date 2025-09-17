@@ -1,14 +1,12 @@
 "use client";
-
+ 
 import Image from "next/image";
-import "./homecliente.css"; 
-
+import "./homecliente.css";
+ 
 export default function Home() {;
-
+ 
   return (
     <>
-
-
       <div>
         {/* banner */}
         <div style={{ width: "100%", display: "flex", justifyContent: "center" }}>
@@ -29,7 +27,7 @@ export default function Home() {;
             />
           </picture>
         </div>
-
+ 
         {/* SOBRE O SISTEMA */}
         <section className="py-5 sobre">
           <div className="container">
@@ -71,7 +69,7 @@ export default function Home() {;
             </div>
           </div>
         </section>
-
+ 
         {/* POR QUE ESCOLHER (com fundo e 4 ícones Bootstrap) */}
         <section className="beneficios">
           <div className="overlay"></div>
@@ -119,7 +117,7 @@ export default function Home() {;
             </div>
           </div>
         </section>
-
+ 
         <section className="py-5 bg-white">
           <div className="container">
             <div className="row gx-4 align-items-stretch">
@@ -143,7 +141,7 @@ export default function Home() {;
                   </ul>
                 </div>
               </div>
-
+ 
               {/* Coluna 2 */}
               <div className="col-lg-3 d-flex flex-column justify-content-start gap-3 h-100 ">
                 <div className="p-2 rounded-3 shadow-sm bg-light w-100" style={{ minHeight: "90px" }}>
@@ -155,7 +153,7 @@ export default function Home() {;
                     Encontre o número de patrimônio do item com problema.
                   </small>
                 </div>
-
+ 
                 <div className="p-2 rounded-3 shadow-sm bg-light w-100" style={{ minHeight: "90px" }}>
                   <div className="d-flex align-items-center gap-2 mb-1">
                     <i className="bi bi-ui-checks fs-4" style={{ color: "#cc0000" }}></i>
@@ -165,7 +163,7 @@ export default function Home() {;
                     Acesse o sistema e insira as informações no formulário.
                   </small>
                 </div>
-
+ 
                 <div className="p-2 rounded-3 shadow-sm bg-light w-100" style={{ minHeight: "90px" }}>
                   <div className="d-flex align-items-center gap-2 mb-1">
                     <i className="bi bi-send-fill fs-4" style={{ color: "#cc0000" }}></i>
@@ -176,7 +174,7 @@ export default function Home() {;
                   </small>
                 </div>
               </div>
-
+ 
               {/* Coluna 3 */}
               <div className="col-lg-4 d-flex justify-content-center home-passos-img mt-3 mt-lg-0">
                 <Image
@@ -190,15 +188,15 @@ export default function Home() {;
             </div>
           </div>
         </section>
-
+ 
         {/* BENEFÍCIOS EXTRAS (4 cards coloridos) */}
         <section className="py-5 bg-white">
           <div className="row g-4 justify-content-center">
-            <h2 className="text-center fw-bold mb-1 tituloSecao">Beneficios extras do sistema</h2>
+            <h2 className="text-center fw-bold mb-1 tituloSecao">Benefícios extras do sistema</h2>
             <p className="text-center mb-4">
               Mais praticidade e eficiência no atendimento das demandas da escola SENAI
             </p>
-
+ 
             <div className="col-12 col-sm-6 col-md-3 d-flex">
               <div className="cardColor c1 card-custom">
                 <div className="cardIcon">
@@ -210,7 +208,7 @@ export default function Home() {;
                 </p>
               </div>
             </div>
-
+ 
             <div className="col-12 col-sm-6 col-md-3 d-flex">
               <div className="cardColor c2 card-custom">
                 <div className="cardIcon">
@@ -222,7 +220,7 @@ export default function Home() {;
                 </p>
               </div>
             </div>
-
+ 
             <div className="col-12 col-sm-6 col-md-3 d-flex">
               <div className="cardColor c3 card-custom">
                 <div className="cardIcon">
@@ -234,7 +232,7 @@ export default function Home() {;
                 </p>
               </div>
             </div>
-
+ 
             <div className="col-12 col-sm-6 col-md-3 d-flex">
               <div className="cardColor c4 card-custom">
                 <div className="cardIcon">
@@ -248,7 +246,7 @@ export default function Home() {;
             </div>
           </div>
         </section>
-
+ 
         {/* EQUIPE */}
         <section className="py-5 bg-white">
           <div className="container">
@@ -256,13 +254,14 @@ export default function Home() {;
             <p className="text-center mb-4">
               Profissionais dedicados a garantir que todos os chamados sejam resolvidos com agilidade e eficiência
             </p>
-            <div className="row g-4">
-              {/* Carlos Andrade */}
-              <div className="col-12 col-sm-6 col-md-3">
+            {/* O row foi ajustado para melhor responsividade */}
+            <div className="row g-4 justify-content-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+              {/* Cada card agora tem a classe 'col' para funcionar com 'row-cols' */}
+              <div className="col d-flex justify-content-center">
                 <div className="rounded overflow-hidden shadow-sm cardEquipe">
                   <Image
-                    src="/img/carlosandrade.png"
-                    alt="Carlos Andrade"
+                    src="/img/duda.png"
+                    alt="Duda"
                     width={420}
                     height={420}
                     className="img-fluid"
@@ -273,40 +272,38 @@ export default function Home() {;
                     </p>
                   </div>
                   <div className="cardEquipeInfo">
-                    <h6 className="mb-0">Carlos Andrade</h6>
-                    <small className="text-white-50">Coordenador de Suporte</small>
+                    <h6 className="mb-0">Eduarda Alves</h6>
+                    <small className="text-white-50">Coordenadora de Suporte</small>
                   </div>
                 </div>
               </div>
-
-              {/* Fernanda Lima */}
-              <div className="col-12 col-sm-6 col-md-3">
+ 
+              <div className="col d-flex justify-content-center">
                 <div className="rounded overflow-hidden shadow-sm cardEquipe">
                   <Image
-                    src="/img/fernandalima.png"
-                    alt="Fernanda Lima"
+                    src="/img/isa.png"
+                    alt="Isa"
                     width={420}
                     height={420}
                     className="img-fluid"
                   />
                   <div className="cardOverlay">
                     <p>
-                      Analisa solicitações, organiza prioridades e acompanha o andamento das demandas.
+                    Oferece suporte para resolver problemas ou garantir o bom funcionamento.
                     </p>
                   </div>
                   <div className="cardEquipeInfo">
-                    <h6 className="mb-0">Fernanda Lima</h6>
-                    <small className="text-white-50">Analista de Chamados</small>
+                    <h6 className="mb-0">Isabela Alves</h6>
+                    <small className="text-white-50">Apoio técnico</small>
                   </div>
                 </div>
               </div>
-
-              {/* João Silva */}
-              <div className="col-12 col-sm-6 col-md-3">
+ 
+              <div className="col d-flex justify-content-center">
                 <div className="rounded overflow-hidden shadow-sm cardEquipe">
                   <Image
-                    src="/img/joaosilva.png"
-                    alt="João Silva"
+                    src="/img/gi.png"
+                    alt="gi"
                     width={420}
                     height={420}
                     className="img-fluid"
@@ -317,30 +314,29 @@ export default function Home() {;
                     </p>
                   </div>
                   <div className="cardEquipeInfo">
-                    <h6 className="mb-0">João Silva</h6>
+                    <h6 className="mb-0">Giovanna Aragão</h6>
                     <small className="text-white-50">Técnico de Manutenção</small>
                   </div>
                 </div>
               </div>
-
-              {/* Mariana Souza */}
-              <div className="col-12 col-sm-6 col-md-3">
+ 
+              <div className="col d-flex justify-content-center">
                 <div className="rounded overflow-hidden shadow-sm cardEquipe">
                   <Image
-                    src="/img/marianasouza.png"
-                    alt="Mariana Souza"
+                    src="/img/giu.png"
+                    alt="giu"
                     width={420}
                     height={420}
                     className="img-fluid"
                   />
                   <div className="cardOverlay">
                     <p>
-                      Atende os usuários, registra solicitações e presta suporte administrativo para a equipe técnica.
+                    Realiza suporte diretamente no local do cliente.
                     </p>
                   </div>
                   <div className="cardEquipeInfo">
-                    <h6 className="mb-0">Mariana Souza</h6>
-                    <small className="text-white-50">Atendimento Administrativo</small>
+                    <h6 className="mb-0">Giulianno Lino</h6>
+                    <small className="text-white-50">Técnico externo</small>
                   </div>
                 </div>
               </div>

@@ -93,7 +93,7 @@ export default function NovoChamado() {
     <div className="container mt-4">
       <div className="d-flex align-items-center mb-4">
         <h2 className="mb-0 me-2" style={{ color: "#225299" }}>Novo chamado</h2>
-        <i className="bi bi-caret-down-fill fs-5" style={{ color: "#225299" }}></i>
+        <i className="bi bi-caret-down-fill fs-5 " style={{ color: "#225299" }}></i>
       </div>
 
       <div className="container mt-4">
@@ -103,18 +103,19 @@ export default function NovoChamado() {
               {/* Título & Tipo de chamado */}
               <div className="row mb-3">
                 <div className="col-md-6 mb-3 mb-md-0">
-                  <label htmlFor="titulo" className="form-label">Título</label>
+                  <label htmlFor="titulo" className="form-label required">Título</label>
                   <input
                     type="text"
                     className="form-control"
                     id="titulo"
                     placeholder="Ex: Computador quebrado"
                     value={titulo}
+                    required
                     onChange={(e) => setTitulo(e.target.value)}
                   />
                 </div>
                 <div className="col-md-6" ref={dropdownRef}>
-                  <label htmlFor="tipoChamado" className="form-label">Tipo de chamado</label>
+                  <label htmlFor="tipoChamado" className="form-label " required>Tipo de chamado</label>
                   <div className="select-custom" onClick={() => setDropdownAberto(!dropdownAberto)}>
                     {tipo ? tiposChamado.find((t) => t.value === tipo)?.label : "Selecione o tipo"}
                     <span className="seta">▼</span>
@@ -147,6 +148,7 @@ export default function NovoChamado() {
                     id="numPatrimonio"
                     placeholder="Ex: 123134212"
                     value={patrimonio}
+                    required
                     onChange={(e) => setPatrimonio(e.target.value)}
                   />
                 </div>
@@ -158,6 +160,7 @@ export default function NovoChamado() {
                     id="localizacao"
                     placeholder="Ex: Bloco A"
                     value={localizacao}
+                    required
                     onChange={(e) => setLocalizacao(e.target.value)}
                   />
                 </div>
@@ -181,6 +184,7 @@ export default function NovoChamado() {
                           name="prioridade"
                           id={`prioridade${nivel.label}`}
                           value={nivel.value}
+                          required
                           checked={prioridade === nivel.value}
                           onChange={(e) => setPrioridade(e.target.value)}
                           style={{ accentColor: "#225299" }}
@@ -202,6 +206,7 @@ export default function NovoChamado() {
                   id="descricao"
                   rows="4"
                   value={descricao}
+                  required
                   onChange={(e) => setDescricao(e.target.value)}
                 ></textarea>
               </div>

@@ -35,8 +35,7 @@ export default function TecnicoLayout({ children }) {
 
   return (
     <RotaProtegida permitido={['tecnico']}>
-    <html lang="pt-br">
-      <body>  
+   
         <div className="d-flex flex-column vh-100">
           <nav className="navbar navbar-expand-lg navbar-light shadow-sm px-3 navbar-horizontal">
             <button
@@ -93,8 +92,6 @@ export default function TecnicoLayout({ children }) {
             </main>
           </div>
         </div>
-      </body>
-    </html>
     </RotaProtegida>
   );
 }

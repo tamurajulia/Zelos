@@ -130,7 +130,17 @@ export default function adminRelatorio() {
 
   return (
     <main className='mainContent'>
+      <button 
+  onClick={() => router.back()} 
+  className="btn p-0"
+  style={{ fontSize: "1.8rem", color: "#1E5AA8", background: "transparent", border: "none" }}
+>
+  <i className="bi bi-caret-left-fill"></i>
+</button>
+
       <div className='containerRelatorio'>
+      
+
         <div className='header'>Relatório do Chamado</div>
 
         <div className='content'>

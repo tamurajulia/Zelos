@@ -5,7 +5,9 @@
     align-items: center;
     justify-content: center;
     min-height: 220px;
+    margin-bottom: 20px;
     transition: transform 0.2s ease;
+    background-color: #f5f0ef;
   }
   
   .card-contato:hover {

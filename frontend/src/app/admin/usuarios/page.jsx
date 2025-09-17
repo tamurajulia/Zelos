@@ -45,7 +45,6 @@ export default function Usuarios() {
         <i className="bi bi-caret-down-fill fs-5" style={{ color: "#225299" }}></i>
       </div>
 
-
       {loading ? (
         <p>Carregando usuários...</p>
       ) : usuarios.length > 0 ? (
@@ -62,8 +61,6 @@ export default function Usuarios() {
       ) : (
         <p>Nenhum usuário encontrado.</p>
       )}
-
-
     </div>
   );
 }

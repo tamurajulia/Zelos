@@ -210,9 +210,9 @@ export default function AdmDashboard() {
                 {/* Gráficos */}
                 <div className="row g-4 mb-5">
                     <div className="col-12 col-md-6">
-                        <h4 className="mb-3">Chamados por Prioridade:</h4>
                         <div className="card shadow-sm h-100" style={{ backgroundColor: '#f8f9fa' }}>
                             <div className="card-body" style={{ backgroundColor: '#f5f0ef' }}>
+                                <h4 className="mb-3">Chamados por Prioridade:</h4>
                                 {prioridadeData && (
                                     <Bar data={prioridadeData} options={barChartOptions} />
                                 )}
@@ -220,9 +220,9 @@ export default function AdmDashboard() {
                         </div>
                     </div>
                     <div className="col-12 col-md-6">
-                        <h4 className="mb-3">Chamados por Status:</h4>
                         <div className="card shadow-sm h-100" style={{ backgroundColor: '#f8f9fa' }}>
                             <div className="card-body" style={{ backgroundColor: '#f5f0ef' }}>
+                                <h4 className="mb-3">Chamados por Status:</h4>
                                 {statusData && (
                                     <Pie data={statusData} options={pieChartOptions} />
                                 )}

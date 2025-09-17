@@ -7,13 +7,13 @@ export default function ClientLayout({ children }) {
     return (
         <>
             <RotaProtegida permitido={['usuario']}>
-                <html lang="pt-br">
-                    <body>
+                
+                   
                         <NavClient />
                         {children}
                         <Footer />
-                    </body>
-                </html>
+                
+              
             </RotaProtegida>
         </>
     )

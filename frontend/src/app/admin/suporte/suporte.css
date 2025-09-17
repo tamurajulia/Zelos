@@ -1,85 +1,264 @@
+:root {
+  --primary: #225299;
+  --card-bg: #f5f0ef;
+  --footer-bg: #f9f9f9;
+  --btn-bg: #004080;
+  --min-card-height: 220px; /* fallback, ajuste se precisar */
+}
 
 .admin-suporte-container {
-    padding: 40px 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.admin-suporte-title {
+  color: var(--primary);
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.admin-suporte-message {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.admin-suporte-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exatamente 2 colunas */
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Card base: altura e overflow consistentes */
+.admin-suporte-card {
+  background-color: var(--card-bg);
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden; /* garante cantos iguais */
+  min-height: var(--min-card-height); /* fallback para igualar visual */
+  height: 100%; /* faz com que grid stretch funcione corretamente */
+}
+
+/* Header */
+.admin-suporte-card-header {
+  background-color: var(--primary);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px 16px;
+  /* não precisa repetir border-radius inferior */
+}
+
+/* Body: ocupa o espaço disponível para empurrar o footer pra baixo */
+.admin-suporte-card-body {
+  padding: 16px;
+  flex: 1 1 auto; /* importantíssimo: ocupa espaço e garante footer embaixo */
+  display: flex;
+  align-items: flex-start;
+}
+
+.admin-suporte-card-text {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Footer: sem border-radius — o card já tem */
+.admin-suporte-card-footer {
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: #666;
+  display: flex;
+  align-items: center;         /* centraliza verticalmente texto e botão */
+  gap: 12px;
+  background-color: var(--footer-bg);
+  /* sem border-bottom-radius (o card controla as bordas) */
+}
+
+/* áreas do footer: left / center / right */
+.footer-left {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.footer-center {
+  flex: 1 1 auto;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
+  color: #888;
+}
+
+.footer-right {
+  flex: 0 0 auto;
+  margin-left: 8px;
+}
+
+/* User / Date */
+.admin-suporte-user {
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+
+/* Botões */
+.btn-responder {
+  padding: 8px 12px;
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Resposta (área expandida) */
+.admin-suporte-resposta {
+  margin: 10px 16px 16px 16px;
+}
+
+.admin-suporte-resposta textarea {
+  width: 100%;
+  height: 80px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.btn-enviar {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: var(--btn-bg);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* ---------------- RESPONSIVIDADE ---------------- */
+
+/* Tablets (até 1024px) */
+@media (max-width: 1024px) {
+  .admin-suporte-container {
+    padding: 20px 15px;
   }
-  
 
   .admin-suporte-title {
-    color: #225299;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
-  
-
-  .admin-suporte-message {
-    text-align: center;
-    font-size: 1rem;
-    color: #555;
-    margin-top: 20px;
-  }
-  
 
   .admin-suporte-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
   }
-  
-
-  .admin-suporte-card {
-    background-color: #f5f0ef;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-  
-  
 
   .admin-suporte-card-header {
-    background-color: #225299;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1.1rem;
-    padding: 12px 16px;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    font-size: 1rem;
   }
-  
+
+  .btn-responder,
+  .btn-enviar {
+    font-size: 0.85rem;
+    padding: 7px 10px;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  .admin-suporte-container {
+    padding: 15px 10px;
+  }
+
+  .admin-suporte-title {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .admin-suporte-grid {
+    grid-template-columns: 1fr; /* só 1 card por linha */
+    gap: 14px;
+  }
+
+  .admin-suporte-card {
+    min-height: auto; /* libera altura mínima no mobile */
+  }
 
   .admin-suporte-card-body {
-    padding: 16px;
+    padding: 12px;
+    font-size: 0.9rem;
   }
-  
-  .admin-suporte-card-text {
-    font-size: 0.95rem;
-    color: #333;
-    line-height: 1.5;
-  }
-  
 
-  .admin-suporte-card-footer {
-    padding: 10px 16px;
-    font-size: 0.85rem;
-    color: #666;
+.admin-suporte-card-footer {
+  flex-direction: column;
+  align-items: center;   /* <-- centraliza tudo no mobile */
+  gap: 6px;
+  text-align: center;
+}
+
+.footer-left,
+.footer-center {
+  width: 100%;
+  text-align: center;   /* garante que nome e data fiquem centralizados */
+}
+
+.footer-right {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* botão centralizado */
+}
+
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    flex: none;
+    width: 100%;
+  }
+
+  .footer-right {
     display: flex;
-    justify-content: space-between;
-    background-color: #f9f9f9;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    justify-content: flex-end;
   }
-  
-  .admin-suporte-user {
-    font-weight: 500;
+
+  .btn-responder,
+  .btn-enviar {
+    width: 100%; /* botão ocupa a largura toda no celular */
+    padding: 10px;
+    font-size: 0.9rem;
   }
-  
-  .admin-suporte-date {
-    font-style: italic;
-    color: #888;
+}
+
+/* Telas muito pequenas (até 400px) */
+@media (max-width: 400px) {
+  .admin-suporte-title {
+    font-size: 1.2rem;
   }
+
+  .admin-suporte-card-header {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .admin-suporte-card-body {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+}

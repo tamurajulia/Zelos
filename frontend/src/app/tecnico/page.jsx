@@ -81,6 +81,7 @@ export default function TecDashboard() {
   }
 
   return (
+    <>
     <div className="container mt-4" id="dashboard-pdf-content">
       {/* Título */}
       <div className="d-flex align-items-center mb-5">
@@ -101,17 +102,16 @@ export default function TecDashboard() {
         <CardInfo quantidade={chamadosProcessoAtribuido} titulo="Chamados em Processo" data={dataAtual} />
         <CardInfo quantidade={chamadosConcluidos} titulo="Chamados Concluídos" data={dataAtual} />
       </div>
-
-      {/* PDF Button */}
-      <div className="d-flex justify-content-center btn-pdf">
-        <button
-          onClick={handleDownloadPDF}
-          className="btn btn-lg btn-personalizado"
-        >
-          Baixar em PDF <i className="bi bi-download"></i>
-        </button>
-      </div>
     </div>
+    <div className="d-flex justify-content-center btn-pdf">
+    <button
+      onClick={handleDownloadPDF}
+      className="btn btn-lg btn-personalizado"
+    >
+      Baixar em PDF <i className="bi bi-download"></i>
+    </button>
+  </div>
+  </>
   );
 }
 

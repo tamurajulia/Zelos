@@ -45,7 +45,7 @@ export default function Layout({ children }) {
                     </button>
 
                     <span className="navbar-brand fw-bold text-danger me-auto">
-                        <img src="/logo.png" className="img-fluid imagem" alt="Logo" />
+                        <img src="/img/logo.png" className="img-fluid imagem" alt="Logo" />
                     </span>
 
                     <Link href="/admin/novo" className="btn btn-danger me-3 d-none d-md-flex align-items-center admin-btn-criar">

@@ -7,7 +7,7 @@
 }
 
 svg {
-    width: 10em;
+    width: 6em; /* tamanho do loading */
     transform-origin: center;
     animation: rotate4 2s linear infinite;
 }

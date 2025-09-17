@@ -7,6 +7,10 @@
     padding: 1.5rem 2rem;
     font-family: Arial, sans-serif;
   }
+
+  .btn {
+    margin-left: 30px;
+  }
   
   .header {
     background-color: #cc0000;
